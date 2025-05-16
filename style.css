@@ -1,0 +1,697 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: auto;
+    font-family: "my-font";
+}
+
+@font-face {
+    font-family: "my-font";
+    src: url(./fonts/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 55px;
+    background-color: black;
+    align-items: flex-end;
+}
+
+header>.head {
+    height: 50px;
+    width: 95vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header>.head>.logo>img {
+    width: 15vw;
+}
+
+header>.head>.navigation>nav {
+    display: flex;
+    gap: 40px;
+}
+
+header>.head>.navigation>nav>ul {
+    display: flex;
+    list-style-type: none;
+}
+
+header>.head>.navigation>nav>ul>li>a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+header>.head>.navigation>nav>ul>li>a>select {
+    width: 20px;
+    background: none;
+    border: none;
+    color: #ec00bf;
+}
+
+header>.head>.navigation>nav>ul>li>a>select:hover {
+    cursor: pointer;
+}
+
+header>.head>.navigation>nav>ul>li>a>select>option {
+    width: 200px;
+    background-color: black;
+    margin-left: -100px;
+    color: white;
+}
+
+header>.head>.button>button {
+    padding: 15px 30px;
+    background-color: #ec00bf;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+header>.head>.lines>img {
+    width: 4vw;
+    display: none;
+}
+
+@media only screen and (max-width:600px) {
+    header {
+        width: 100vw;
+        background-color: black;
+    }
+
+    header>.head {
+        background-color: black;
+        display: flex;
+        height: 60px;
+        padding-top: 20px;
+    }
+
+    header>.head>.logo>img {
+        width: 50vw;
+    }
+
+    header>.head>.navigation>nav>ul>li>a {
+        display: none;
+    }
+
+    header>.head>.button>button {
+        display: none;
+    }
+
+    header>.head>.lines>img {
+        width: 8vw;
+        margin-left: -100px;
+        display: block;
+    }
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.child1 {
+    width: 40%;
+    height: 70vh;
+    align-content: top;
+    margin-top: 150px;
+}
+
+.child1>img {
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid grey;
+}
+
+.child2 {
+    width: 40%;
+    height: 70vh;
+    align-content: top;
+    margin-top: 150px;
+}
+
+.child2>h1 {
+    font-size: 65px;
+    letter-spacing: 1px;
+    color: white;
+}
+
+.child2>h1>span {
+    letter-spacing: 2px;
+    color: #ec00bf;
+}
+
+.child2>p {
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+}
+
+.child2>button {
+    padding: 8px 70px;
+    background-color: rgb(39, 39, 39);
+    border: 2px solid #ec00bf;
+    color: #ec00bf;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width:600px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+        height: 100vh;
+    }
+
+    .hero>.child1 {
+        width: 550px;
+        height: 200px;
+        margin-top: 90px;
+    }
+
+    .hero>.child2 {
+        width: 520px;
+        height: 350px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .hero>.child2>h1 {
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    .hero>.child2>h1>span {
+        font-size: 50px;
+    }
+
+    .child2>button {
+        padding: 12px 80px;
+        background-color: rgb(39, 39, 39);
+        border: 2px solid #ec00bf;
+        color: #ec00bf;
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+}
+
+.hero1 {
+    height: 100vh;
+    padding-top: 100px;
+}
+
+.hero1>.button {
+    height: 50px;
+    width: 150px;
+    border: 2px solid;
+    text-align: center;
+    align-content: center;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: 2px solid #ec00bf;
+}
+
+.hero1>.button>button {
+    width: 25px;
+    height: 25px;
+    border-radius: 12.5px;
+    margin: 2px;
+    background-color: black;
+    border: 2px solid #ec00bf;
+}
+
+.hero1>.button>button:nth-child(1) {
+    background-color: #ec00bf;
+}
+
+.hero1>.hero1-child {
+    height: 80vh;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    margin-left: 120px;
+    overflow: hidden;
+}
+
+.hero1>.hero1-child>.metaglass {
+    height: 500px;
+    width: 500px;
+}
+
+.hero1>.hero1-child>.metaglass>img {
+    width: 450px;
+}
+
+.hero1>.hero1-child>.hero1-text {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+}
+
+.hero1>.hero1-child>.hero1-text>h1 {
+    color: white;
+    font-size: 35px;
+}
+
+.hero1>.hero1-child>.hero1-text>p {
+    color: white;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.hero1>.hero1-child>.laptop {
+    height: 90%;
+    width: 30%;
+    background-image: url(download.jpeg);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 450px;
+}
+
+.hero1>.hero1-child>.laptop>img {
+    display: flex;
+    flex-wrap: wrap;
+    width: 405px;
+    padding-right: 90px;
+    padding-top: 90px;
+    height: auto;  
+    overflow: hidden; 
+}
+
+@media only screen and (max-width:600px) {
+    * {
+        margin: 0;
+        padding: 0
+    }
+
+    .hero1>.hero1-child {
+        height: 155vh;
+        width: 80vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: top;
+    }
+
+    .hero1>.hero1-child>.metaglass {
+        width: 80vw;
+        height: 150vh;
+        margin-top: -50px;
+    }
+
+    .hero1>.hero1-child>.metaglass>img {
+        width: 90vw;
+        margin-top: 1px;
+    }
+
+    .hero1>.hero1-child>.hero1-text {
+        width: 80vw;
+    }
+
+    .hero1>.hero1-child>.hero1-text>h1 {
+        color: whote;
+        font-size: 30px;
+        margin-top: 50px;
+    }
+
+    .hero1>.hero1-child>.hero1-text>p {
+        color: white;
+        margin-top: 15px;
+    }
+
+    .hero1>.hero1-child>.laptop {
+        display: inline;
+        width: 80vw;
+        background-color: blue;
+        background: none;
+    }
+
+    .hero1>.hero1-child>.laptop>img {
+        display: inline;
+        width: 80vw;
+    }
+}
+
+.hero2 {
+    height: 180vh;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.hero2>h1 {
+    font-size: 100px;
+    color: #ec00bf;
+}
+
+.hero2>.hero2-childs {
+    height: 140vh;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hero2>.hero2-childs>.child1 {
+    width: 49%;
+    height: 350px;
+    border: 2px solid grey;
+    background: linear-gradient(rgba(2, 8, 37, 0.5), rgba(2, 8, 37, 0.5)), url(download\ \(1\).jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 14px;
+}
+
+.hero2>.hero2-childs>.child1>.text1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    align-content: center;
+    padding-top: 100px;
+}
+
+.hero2>.hero2-childs>.child1>.text1>img {
+    width: 30px;
+}
+
+.hero2>.hero2-childs>.child1>.text1>h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.hero2>.hero2-childs>.child1>p {
+    color: white;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.hero2>.hero2-childs>.child1>button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid #ec00bf;
+    color: #ec00bf;
+    font-weight: 700;
+    background-color: rgba(26, 26, 26, 0.842);
+    margin-top: 100px;
+}
+
+.hero2>.hero2-childs>.child1>button:hover {
+    background-color: #ec00bf;
+    color: white;
+    border: 2px solid #ec00bf;
+    cursor: pointer;
+}
+
+.hero2>.hero2-childs>.child1:hover {
+    background-size: 650px;
+}
+
+.hero2>.hero2-childs>.child2 {
+    width: 49%;
+    height: 350px;
+    border: 2px solid grey;
+    background: linear-gradient(rgba(2, 8, 37, 0.5), rgba(2, 8, 37, 0.5)), url(download\ \(2\).jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 14px;
+}
+
+.hero2>.hero2-childs>.child2>.text2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    align-content: center;
+    padding-top: 100px;
+}
+
+.hero2>.hero2-childs>.child2>.text2>img {
+    width: 30px;
+}
+
+.hero2>.hero2-childs>.child2>.text2>h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.hero2>.hero2-childs>.child2>p {
+    color: white;
+    font-weight: 700;
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+.hero2>.hero2-childs>.child2>button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid #ec00bf;
+    color: #ec00bf;
+    font-weight: 700;
+    background-color: rgba(26, 26, 26, 0.842);
+    margin-top: 100px;
+}
+
+.hero2>.hero2-childs>.child2>button:hover {
+    background-color: #ec00bf;
+    color: white;
+    border: 2px solid #ec00bf;
+    cursor: pointer;
+}
+
+.hero2>.hero2-childs>.child2:hover {
+    background-size: 650px;
+}
+
+.hero2>.hero2-childs>.child3 {
+    width: 49%;
+    height: 350px;
+    border: 2px solid grey;
+    background: linear-gradient(rgba(2, 8, 37, 0.5), rgba(2, 8, 37, 0.5)), url(download\ \(3\).jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 14px;
+    margin-top: 20px;
+}
+
+.hero2>.hero2-childs>.child3>.text3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    align-content: center;
+    padding-top: 100px;
+}
+
+.hero2>.hero2-childs>.child3>.text3>img {
+    width: 30px;
+}
+
+.hero2>.hero2-childs>.child3>.text3>h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.hero2>.hero2-childs>.child3>p {
+    color: white;
+    font-weight: 700;
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+.hero2>.hero2-childs>.child3>button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid #ec00bf;
+    color: #ec00bf;
+    font-weight: 700;
+    background-color: rgba(26, 26, 26, 0.842);
+    margin-top: 100px;
+}
+
+.hero2>.hero2-childs>.child3>button:hover {
+    background-color: #ec00bf;
+    color: white;
+    border: 2px solid #ec00bf;
+    cursor: pointer;
+}
+
+.hero2>.hero2-childs>.child3:hover {
+    background-size: 650px;
+}
+
+.hero2>.hero2-childs>.child4 {
+    width: 49%;
+    height: 350px;
+    border: 2px solid grey;
+    background: linear-gradient(rgba(2, 8, 37, 0.5), rgba(2, 8, 37, 0.5)), url(download.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 14px;
+    margin-top: 20px;
+}
+
+.hero2>.hero2-childs>.child4>.text4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    align-content: center;
+    padding-top: 100px;
+}
+
+.hero2>.hero2-childs>.child4>.text4>img {
+    width: 30px;
+}
+
+.hero2>.hero2-childs>.child4>.text4>h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.hero2>.hero2-childs>.child4>p {
+    color: white;
+    font-weight: 700;
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+.hero2>.hero2-childs>.child4>button {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 2px solid #ec00bf;
+    color: #ec00bf;
+    font-weight: 700;
+    background-color: rgba(26, 26, 26, 0.842);
+    margin-top: 100px;
+}
+
+.hero2>.hero2-childs>.child4>button:hover {
+    background-color: #ec00bf;
+    color: white;
+    border: 2px solid #ec00bf;
+    cursor: pointer;
+}
+
+.hero2>.hero2-childs>.child4:hover {
+    background-size: 650px;
+}
+
+@media only screen and (max-width:600px) {
+    .hero2 {
+        height: 240vh;
+        margin-top: 550px;
+        padding-top: 0;
+    }
+
+    .hero2>h1 {
+        font-size: 80px;
+    }
+
+    .hero2>.hero2-childs {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .hero2>.hero2-childs>.child1 {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .hero2>.hero2-childs>.child2 {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .hero2>.hero2-childs>.child3 {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .hero2>.hero2-childs>.child4 {
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+footer {
+    height: 70vh;
+    background-color: rgb(32, 32, 32);
+    border-top: 1px solid grey;
+}
+
+footer>.plateform {
+    align-items: center;
+    align-content: center;
+    height: 80px;
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+footer>.plateform>img {
+    width: 40px;
+}
+
+footer>.para1 {
+    height: 20px;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: white;
+}
+
+footer>.para2 {
+    height: 30px;
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #ec00bf;
+}
+
+footer>.para3 {
+    height: 200px;
+    width: 90vw;
+    margin: 0 auto;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+}
+
+footer>.para3>p {
+    margin-top: 20px;
+}
